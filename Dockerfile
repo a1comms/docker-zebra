@@ -33,7 +33,7 @@ RUN chown root:root /usr/lib/cups/filter/rastertolabel && \
 RUN /usr/sbin/cupsd && sleep 16 && \
     /usr/sbin/cupsctl --no-remote-admin --remote-any --share-printers && \
     /usr/sbin/lpadmin -p Zebra_LP2844 -E -v usb://Zebra/LP2844 -m drv:///sample.drv/zebraep2.ppd && \
-    /usr/sbin/lpadmin -p Zebra_LP2844 -o orientation-requested=6 && \
+    /usr/sbin/lpadmin -p Zebra_LP2844 -o orientation-requested-default=6 && \
     /usr/sbin/lpadmin -p Zebra_LP2844 -o Resolution=203dpi && \
     /usr/sbin/lpadmin -p Zebra_LP2844 -o Darkness=30 && \
     /usr/sbin/lpadmin -p Zebra_LP2844 -o PageSize=w288h432 && \
