@@ -1,0 +1,25 @@
+From f20a9b24615a2aac36017ef7b79228c8ac63d2ea Mon Sep 17 00:00:00 2001
+From: Samuel Melrose <sam.melrose@a1comms.com>
+Date: Mon, 12 Jul 2021 10:33:09 +0100
+Subject: [PATCH] reverse label orientation
+
+---
+ filter/rastertolabel.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/filter/rastertolabel.c b/filter/rastertolabel.c
+index 73ac4d7..e87ad5f 100644
+--- a/filter/rastertolabel.c
++++ b/filter/rastertolabel.c
+@@ -496,7 +496,7 @@ EndPage(ppd_file_t          *ppd,	/* I - PPD file */
+ 	* leading edge...
+ 	*/
+ 
+-	puts("^POI");
++	puts("^PON");
+ 
+        /*
+         * Set print width...
+-- 
+2.20.1
+
