@@ -39,4 +39,6 @@ RUN /usr/sbin/cupsd && sleep 16 && \
     /usr/sbin/lpadmin -p Zebra_LP2844 -o PageSize=w288h432 && \
     killall -s TERM cupsd && sleep 30
 
+EXPOSE 631
+
 CMD ["/usr/sbin/cupsd", "-f"]
